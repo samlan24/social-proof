@@ -1,4 +1,76 @@
 body{
     padding: 0;
     margin: 0;
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+img{
+    border-radius: 50%;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 150px;
+    
+}
+
+.card{
+    display: flex;
+    
+}
+.card-info{
+    flex-basis: 50%;
+    
+}
+
+.card-info h1{
+    font-weight: 700;
+}
+
+.card-ratings{
+    flex-basis: 50%;
+}
+.card-rating{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: hsl(300, 24%, 96%);
+    margin-bottom: 20px;
+}
+
+
+.customer-ratings{
+    display: flex;
+    
+}
+
+.customer-rating{
+   background-color: hsl(300, 43%, 22%);
+   margin-right: 20px;
+   padding: 50px;
+   border-radius: 10px;
+}
+
+.customer-heading{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.customer-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20px;
+
+}
+
+.customer-details h3{
+    margin: 0;
 }
