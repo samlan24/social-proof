@@ -6,6 +6,7 @@ body{
     display: grid;
     place-items: center;
     min-height: 100vh;
+   
 }
 
 img{
@@ -13,10 +14,6 @@ img{
 }
 
 .container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
     margin: 150px;
     
 }
@@ -26,38 +23,82 @@ img{
     
 }
 .card-info{
-    flex-basis: 50%;
-    
+    flex-basis: 40%;
+    padding-right: 100px;
+    margin-right: 100px;
 }
 
 .card-info h1{
     font-weight: 700;
+    font-size: 40px;
+    color: hsl(300, 43%, 22%);
 }
-
+.card-info p{
+    line-height: 25px;
+    color: hsl(303, 10%, 53%)
+}
 .card-ratings{
-    flex-basis: 50%;
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .card-rating{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    border-radius: 10px;
     background-color: hsl(300, 24%, 96%);
-    margin-bottom: 20px;
+    width: 400px;
+    margin-bottom: 15px;
 }
+
+.rating-1{
+    align-self: flex-start;
+    
+}
+.rating-2{
+    align-self: center;
+   
+}
+.rating-3{
+    align-self: flex-end;
+}
+.rating-text{
+    color: hsl(300, 43%, 22%);
+}
+
+
+
+
+
 
 
 .customer-ratings{
     display: flex;
-    
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+    height: 300px;
 }
 
 .customer-rating{
    background-color: hsl(300, 43%, 22%);
    margin-right: 20px;
-   padding: 50px;
+   padding: 40px;
    border-radius: 10px;
+   
+   
 }
+.customer-1{
+   justify-self: flex-start;
+}
+.customer-2{
+justify-self: flex-end;
+}
+.customer-3{
 
+}
 .customer-heading{
     display: flex;
     margin-bottom: 20px;
@@ -73,4 +114,15 @@ img{
 
 .customer-details h3{
     margin: 0;
+    color: hsl(0, 0%, 100%);
 }
+.customer-details span{
+    color: hsl(333, 80%, 67%);
+}
+
+.customer-review{
+    color: hsl(0, 0%, 100%);
+    line-height: 25px;
+}
+
+
